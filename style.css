@@ -37,14 +37,20 @@ h1 {
 h1::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0%;
+  left: 0%;
+  right: -10%;
+  bottom: -10%;
   width: 100%;
   height: 100%;
+  display: block;
   filter: blur(10px);
   background: inherit;
   /* z-index: -1; */
-  box-shadow: inset 0 0 0 9999px hsla(0, 0%, 100%, 0.3);
+  box-shadow: inset 0 0 0 3333px hsla(0, 0%, 100%, 0.3);
+}
+
+span {
+  position: relative;
+  z-index: 1;
 }
